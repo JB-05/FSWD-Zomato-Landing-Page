@@ -151,7 +151,7 @@ input{
 
 .we__offer_card img{
     height: 150px;
-    width: 80%;
+    width: 100%;
     object-fit:cover;
     object-position:center;
 }
@@ -166,5 +166,99 @@ input{
 }
 
 .we__offer_content p{
-    font-size: 17px;
+    font-size: 14px;
 }
+
+.collection h1{
+    font-weight: 700;
+    display: flex
+}
+
+.collection, .sub_heading_container{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub_heading_container span:nth-child(2){
+    color: #f82a3f;
+    font-size:20px;
+    cursor: pointer;
+
+}
+
+.collection_cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 30px;
+}
+
+.collection_cards_container .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    border: 1px solid grey;
+    border-radius: 25px;
+    position: relative;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.card1{
+    background-image: url(./10123-J-20123-Zomato-Landing-Page/images/collection1.jpg)
+}
+
+.card2{
+    background-image: url(./10123-J-20123-Zomato-Landing-Page/images/collection2.jpg)
+}
+
+.card3{
+    background-image: url(./10123-J-20123-Zomato-Landing-Page/images/collection3.jpg)
+}
+
+.card4{
+    background-image: url(./10123-J-20123-Zomato-Landing-Page/images/collection4.jpg)
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg ,
+         rgba(0,0,0,0.9) 0%,
+         rgba(0,0,0,0.05 )70%,
+         rgba(0,0,0,0.005) 85%
+        );
+}
+
+.collection_cards_container .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+}
+
+.collection_cards_container .card .content h2{
+    font-weight: 450;
+    font-size: 20px;
+}
+
+.collection_cards_container .card .content span{
+    font-size: 15px;
+}
+
+.collection_cards_container .card:hover{
+    transform: scale(1.05);
+}
+
