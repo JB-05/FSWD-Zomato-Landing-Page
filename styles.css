@@ -174,14 +174,15 @@ input{
     display: flex
 }
 
-.collection, .sub_heading_container{
+.collection .sub_heading_container{
     font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
+
 
 .sub_heading_container span:nth-child(2){
     color: #f82a3f;
@@ -262,3 +263,123 @@ input{
     transform: scale(1.05);
 }
 
+.get__the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5efbd3d;
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get__the_app .semi_container{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 1.5rem;
+}
+.get__the_app .semi_container .left{
+    flex:2;
+}
+
+.get__the_app .semi_container .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get__the_app .semi_container .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.right{
+    color:grey;
+}
+
+.right h2{
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.607);
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.right .radio__button_container{
+    display: flex;
+    align-items: center;
+    gap:1.3rem;
+}
+
+.right .radio__button_container div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.right .radio__button_container .input_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgba(251, 102, 102, 0.408);
+}
+
+.right .input_container{
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+.input_container button ,
+.input_container input{
+    padding: 10px 12px;
+}
+
+.input_container input{
+    flex: auto;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 17px;
+}
+
+.input_container button{
+    background-color: #f51d1df1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right .download__app_container {
+    display: flex;
+    gap: 0.9rem;
+    flex-direction: column;
+}
+
+.download__app_container h4{
+    font-weight: 450;
+    color: gray;
+}
+
+.right .download__app_container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.right .download__app_container div img{
+    width: 35%;
+}
+
+.right .download__app_container img{
+    display: inline-flex;
+    width: 35%;
+}
+
+/*Media Queries for download container*/
